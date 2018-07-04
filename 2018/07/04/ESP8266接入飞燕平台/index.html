@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="C,IOT,ESP8266,Aliyun,飞燕," />
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="我的第一篇博客第一次用markdown，先试试 这是 H1这是 H2这是 H6 区块引用This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.Vestibulum enim wisi,">
+<meta name="description" content="环境搭建参照ESP8266在Alios-Things上的入门开发指南 （一）开发环境搭建及HelloWorld固件进行环境搭建  系统需求：windows10，安装Docker，VSCode(需包括插件alios-studio、c/c++)。 获取作者制作好的Docker镜像   pull jacklan/alios-things-docker ```   12345678    也可以自己搭建，">
+<meta name="keywords" content="C,IOT,ESP8266,Aliyun,飞燕">
 <meta property="og:type" content="article">
-<meta property="og:title" content="FirstBlog">
-<meta property="og:url" content="http://yoursite.com/2018/06/10/FirstBlog/index.html">
+<meta property="og:title" content="ESP8266接入飞燕平台">
+<meta property="og:url" content="http://yoursite.com/2018/07/04/ESP8266接入飞燕平台/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="我的第一篇博客第一次用markdown，先试试 这是 H1这是 H2这是 H6 区块引用This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.Vestibulum enim wisi,">
+<meta property="og:description" content="环境搭建参照ESP8266在Alios-Things上的入门开发指南 （一）开发环境搭建及HelloWorld固件进行环境搭建  系统需求：windows10，安装Docker，VSCode(需包括插件alios-studio、c/c++)。 获取作者制作好的Docker镜像   pull jacklan/alios-things-docker ```   12345678    也可以自己搭建，">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-06-10T14:32:38.797Z">
+<meta property="og:updated_time" content="2018-07-04T14:36:34.520Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="FirstBlog">
-<meta name="twitter:description" content="我的第一篇博客第一次用markdown，先试试 这是 H1这是 H2这是 H6 区块引用This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.Vestibulum enim wisi,">
+<meta name="twitter:title" content="ESP8266接入飞燕平台">
+<meta name="twitter:description" content="环境搭建参照ESP8266在Alios-Things上的入门开发指南 （一）开发环境搭建及HelloWorld固件进行环境搭建  系统需求：windows10，安装Docker，VSCode(需包括插件alios-studio、c/c++)。 获取作者制作好的Docker镜像   pull jacklan/alios-things-docker ```   12345678    也可以自己搭建，">
 
 
 
@@ -119,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/06/10/FirstBlog/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/07/04/ESP8266接入飞燕平台/"/>
 
 
 
 
 
-  <title>FirstBlog | Hexo</title>
+  <title>ESP8266接入飞燕平台 | Hexo</title>
   
 
 
@@ -232,7 +233,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/10/FirstBlog/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/04/ESP8266接入飞燕平台/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doe">
@@ -249,7 +250,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">FirstBlog</h1>
+          <h1 class="post-title" itemprop="name headline">ESP8266接入飞燕平台</h1>
         
 
         <div class="post-meta">
@@ -261,8 +262,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-06-10T21:49:42+08:00">
-                2018-06-10
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-04T22:29:44+08:00">
+                2018-07-04
               </time>
             
 
@@ -271,6 +272,39 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/C/" itemprop="url" rel="index">
+                    <span itemprop="name">C</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/C/ESP8266/" itemprop="url" rel="index">
+                    <span itemprop="name">ESP8266</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -299,15 +333,27 @@
       
 
       
-        <h1 id="我的第一篇博客"><a href="#我的第一篇博客" class="headerlink" title="我的第一篇博客"></a>我的第一篇博客</h1><p>第一次用markdown，先试试</p>
-<h1 id="这是-H1"><a href="#这是-H1" class="headerlink" title="这是 H1"></a>这是 H1</h1><h2 id="这是-H2"><a href="#这是-H2" class="headerlink" title="这是 H2"></a>这是 H2</h2><h6 id="这是-H6"><a href="#这是-H6" class="headerlink" title="这是 H6"></a>这是 H6</h6><blockquote>
-<p>区块引用<br>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,<br>consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.<br>Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p>
-<p>Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse<br>id sem consectetuer libero luctus adipiscing.</p>
-</blockquote>
-<p>链接 :<a href="https://www.github.com/" target="_blank" rel="noopener">Github</a><br>加粗 :<strong>Bold</strong><br>斜体字 :<em>Italics</em><br>删除线 :<del>text</del><br>段落 : 段落之间空一行</p>
-<p>换行符 : 一行结束时输入两个空格<br>内嵌代码 :<br> <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span>  </span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">head</span>&gt;</span> </span><br><span class="line">       <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span>	</span><br><span class="line">       <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p>水平线</p>
+        <h1 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h1><p>参照<a href="https://blog.csdn.net/lan120576664/article/details/80197396" target="_blank" rel="noopener">ESP8266在Alios-Things上的入门开发指南 （一）开发环境搭建及HelloWorld固件</a>进行环境搭建</p>
+<ol>
+<li>系统需求：windows10，安装Docker，VSCode(需包括插件alios-studio、c/c++)。</li>
+<li><p>获取作者制作好的Docker镜像  </p>
+<figure class="highlight docker"><figcaption><span>pull jacklan/alios-things-docker ```   </span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">    也可以自己搭建，请参照原文档</span><br><span class="line"><span class="number">3</span>. 克隆alios-things仓库代码  </span><br><span class="line">``` git clone https://github.com/alibaba/AliOS-Things ``` </span><br><span class="line"><span class="number">4</span>. 用VSCode打开AliOS-Things代码仓库，进入终端，执行下列命令即可进入docker环境  </span><br><span class="line">``` docker <span class="keyword">run</span> -v %cd%:/home/alios/AliOS-Things --name alios-things-build -it --rm jacklan/alios-things-docker  ```  </span><br><span class="line">    编译时使用以下指令  </span><br><span class="line">    ``` aos make helloworld@esp8266```  </span><br><span class="line">    如果后续需要再次进入docker环境可以依次执行以下指令</span><br></pre></td></tr></table></figure>
+<p> @echo off<br> docker stop alios-things-build<br> docker rm alios-things-build<br> docker run -v %cd%:/home/alios/AliOS-Things –name alios-things-build -it –rm jacklan/alios-things-docker<br> <code>`</code></p>
+<p> 建议保存为.bat文件方便使用</p>
+</li>
+<li>然后烧录即可<br>|文件名|烧录地址|<br>|:——–|:——-|<br>|boot_v1.7_921600.bin|0x0|<br>|esp_init_data_default.bin|    0x3fc000|<br>|blank.bin|0x3fe000|<br><a href="mailto:|helloworld@esp8266-0x1000.bin" target="_blank" rel="noopener">|helloworld@esp8266-0x1000.bin</a>|0x1000|<br>其中，“boot_v1.7_921600.bin” “esp_init_data_default.bin” “blank.bin”这三个文件可以在“xxx\AliOS-Things\platform\mcu\esp8266\bsp”目录找到<br>“<a href="mailto:helloworld@esp8266-0x1000.bin" target="_blank" rel="noopener">helloworld@esp8266-0x1000.bin</a>”可以在“xxx\AliOS-Things\out\helloworld@esp8266”找到</li>
+</ol>
 <hr>
+<h1 id="设备接入"><a href="#设备接入" class="headerlink" title="设备接入"></a>设备接入</h1><h2 id="注册设备"><a href="#注册设备" class="headerlink" title="注册设备"></a>注册设备</h2><p>首先在<a href="https://living.aliyun.com/" target="_blank" rel="noopener">https://living.aliyun.com/</a>建立设备<strong>注意前期注册ICA标准格式</strong>，如果透传格式需在设备调试页面编辑脚本，记录下  </p>
+<ul>
+<li>PRODUCT_KEY</li>
+<li>PRODUCT_SECRET</li>
+<li>DEVICE_NAME</li>
+<li>DEVICE_SECRET  </li>
+</ul>
+<p>修改到framework/protocol/linkkit/iotkit/sdk-encap/imports/iot_import_product.h文件中。  </p>
+<h2 id="配置TSL"><a href="#配置TSL" class="headerlink" title="配置TSL"></a>配置TSL</h2><p>在设备页点击查看JSON,然后通过<a href="https://www.sojson.com/yasuo.html" target="_blank" rel="noopener">压缩转义网站</a>进行<strong>压缩并转义</strong>操作，然后填入到<code>\example\linkkitapp\linkkit_app.c</code>中</p>
+<h2 id="数据传输"><a href="#数据传输" class="headerlink" title="数据传输"></a>数据传输</h2><p>数据接收在 <code>thing_prop_changed</code>函数中<br>数据发送使用函数 <code>linkkit_data_publish</code>函数即可</p>
 
       
     </div>
@@ -323,6 +369,20 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/C/" rel="tag"># C</a>
+          
+            <a href="/tags/IOT/" rel="tag"># IOT</a>
+          
+            <a href="/tags/ESP8266/" rel="tag"># ESP8266</a>
+          
+            <a href="/tags/Aliyun/" rel="tag"># Aliyun</a>
+          
+            <a href="/tags/飞燕/" rel="tag"># 飞燕</a>
+          
+        </div>
+      
 
       
       
@@ -332,8 +392,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/06/10/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2018/06/10/FirstBlog/" rel="next" title="FirstBlog">
+                <i class="fa fa-chevron-left"></i> FirstBlog
               </a>
             
           </div>
@@ -342,8 +402,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/07/04/ESP8266接入飞燕平台/" rel="prev" title="ESP8266接入飞燕平台">
-                ESP8266接入飞燕平台 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/07/04/ESP8266接入物联网套件/" rel="prev" title="ESP8266接入物联网套件">
+                ESP8266接入物联网套件 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -476,7 +536,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#我的第一篇博客"><span class="nav-number">1.</span> <span class="nav-text">我的第一篇博客</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#这是-H1"><span class="nav-number">2.</span> <span class="nav-text">这是 H1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#这是-H2"><span class="nav-number">2.1.</span> <span class="nav-text">这是 H2</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#这是-H6"><span class="nav-number">2.1.0.0.0.1.</span> <span class="nav-text">这是 H6</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#环境搭建"><span class="nav-number">1.</span> <span class="nav-text">环境搭建</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设备接入"><span class="nav-number">2.</span> <span class="nav-text">设备接入</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#注册设备"><span class="nav-number">2.1.</span> <span class="nav-text">注册设备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置TSL"><span class="nav-number">2.2.</span> <span class="nav-text">配置TSL</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据传输"><span class="nav-number">2.3.</span> <span class="nav-text">数据传输</span></a></li></ol></li></ol></div>
             
 
           </div>
