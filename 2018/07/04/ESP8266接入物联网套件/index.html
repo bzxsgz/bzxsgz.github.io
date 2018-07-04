@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="环境搭建可直接参照esp8266-aliyun-demo进行环境搭建  建议使用cygwin方式搭建环境,在下载链接下载包含有编译器的cygwin 获取SDK   git clone --recursivelink12345678910111213141516    建议在git bash,或者cygwin环境下获取，可以避免出现\r\n的问题# 编译  打开```aliyun_config.h`">
+<meta name="description" content="环境搭建可直接参照esp8266-aliyun-demo进行环境搭建  建议使用cygwin方式搭建环境,在下载链接下载包含有编译器的cygwin 获取SDK $ git clone --recursive https://github.com/espressif/esp8266-aliyun.git 建议在git bash,或者cygwin环境下获取，可以避免出现\r\n的问题  编译打开ali">
 <meta name="keywords" content="C,IOT,ESP8266,Aliyun">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ESP8266接入物联网套件">
 <meta property="og:url" content="http://yoursite.com/2018/07/04/ESP8266接入物联网套件/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="环境搭建可直接参照esp8266-aliyun-demo进行环境搭建  建议使用cygwin方式搭建环境,在下载链接下载包含有编译器的cygwin 获取SDK   git clone --recursivelink12345678910111213141516    建议在git bash,或者cygwin环境下获取，可以避免出现\r\n的问题# 编译  打开```aliyun_config.h`">
+<meta property="og:description" content="环境搭建可直接参照esp8266-aliyun-demo进行环境搭建  建议使用cygwin方式搭建环境,在下载链接下载包含有编译器的cygwin 获取SDK $ git clone --recursive https://github.com/espressif/esp8266-aliyun.git 建议在git bash,或者cygwin环境下获取，可以避免出现\r\n的问题  编译打开ali">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-04T14:36:42.189Z">
+<meta property="og:updated_time" content="2018-07-04T14:44:16.306Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ESP8266接入物联网套件">
-<meta name="twitter:description" content="环境搭建可直接参照esp8266-aliyun-demo进行环境搭建  建议使用cygwin方式搭建环境,在下载链接下载包含有编译器的cygwin 获取SDK   git clone --recursivelink12345678910111213141516    建议在git bash,或者cygwin环境下获取，可以避免出现\r\n的问题# 编译  打开```aliyun_config.h`">
+<meta name="twitter:description" content="环境搭建可直接参照esp8266-aliyun-demo进行环境搭建  建议使用cygwin方式搭建环境,在下载链接下载包含有编译器的cygwin 获取SDK $ git clone --recursive https://github.com/espressif/esp8266-aliyun.git 建议在git bash,或者cygwin环境下获取，可以避免出现\r\n的问题  编译打开ali">
 
 
 
@@ -336,18 +336,30 @@
         <h1 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h1><p>可直接参照<a href="https://github.com/espressif/esp8266-aliyun-demo" target="_blank" rel="noopener">esp8266-aliyun-demo</a>进行环境搭建</p>
 <ol>
 <li>建议使用cygwin方式搭建环境,在<a href="https://pan.baidu.com/s/1pKJJ97H" target="_blank" rel="noopener">下载链接</a>下载包含有编译器的cygwin</li>
-<li>获取SDK   <figure class="highlight plain"><figcaption><span>git clone --recursive</span><a href="https://github.com/espressif/esp8266-aliyun.git```" target="_blank" rel="noopener">link</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">    建议在git bash,或者cygwin环境下获取，可以避免出现\r\n的问题</span><br><span class="line"></span><br><span class="line"># 编译  </span><br><span class="line">打开```aliyun_config.h```，将设备的</span><br><span class="line">* PRODUCT_KEY</span><br><span class="line">* DEVICE_NAME</span><br><span class="line">* DEVICE_SECRET</span><br><span class="line">* WIFI_SSID</span><br><span class="line">* WIFI_PASSWORD    </span><br><span class="line"></span><br><span class="line">填入，然后执行```./genmisc.sh```即可。编译完成后即可得到```esp8266-aliyun/bin/upgrade/user1.2048.new.5.bin```文件。</span><br><span class="line"></span><br><span class="line">&gt;如果所烧录模块与默认不同，可以自行编辑gen_misc.sh文件，修改默认参数  </span><br><span class="line">&gt;</span><br><span class="line">&gt;进行过一次编译之后，如果不需要修改aliyun内容，为提高编译速度可以将gen_misc.sh文件中的</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
-</li>
+<li>获取SDK<br> <code>$ git clone --recursive https://github.com/espressif/esp8266-aliyun.git</code><br> 建议在git bash,或者cygwin环境下获取，可以避免出现\r\n的问题</li>
 </ol>
+<h1 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h1><p>打开<code>aliyun_config.h</code>，将设备的</p>
+<ul>
+<li>PRODUCT_KEY</li>
+<li>DEVICE_NAME</li>
+<li>DEVICE_SECRET</li>
+<li>WIFI_SSID</li>
+<li>WIFI_PASSWORD    </li>
+</ul>
+<p>填入，然后执行<code>./genmisc.sh</code>即可。编译完成后即可得到<code>esp8266-aliyun/bin/upgrade/user1.2048.new.5.bin</code>文件。</p>
 <blockquote>
-<p>make aliyun<br>make clean<br><code>`</code><br>注释掉  </p>
+<p>如果所烧录模块与默认不同，可以自行编辑gen_misc.sh文件，修改默认参数  </p>
+<p>进行过一次编译之后，如果不需要修改aliyun内容，为提高编译速度可以将gen_misc.sh文件中的</p>
+<pre><code>make aliyun  
+make clean  
+</code></pre><p>注释掉  </p>
 </blockquote>
 <h1 id="修改内容记录"><a href="#修改内容记录" class="headerlink" title="修改内容记录"></a>修改内容记录</h1><ul>
 <li>SDK基于ESP8266官方RTOS SDK，结构类似。</li>
 <li>可以使用<code>IOT_CloseLog()</code>来关闭LOG打印</li>
 <li>需要轮询调用<code>IOT_MQTT_Yield(pclient, 200)</code>来获取下发的数据</li>
 <li>数据上传使用<code>IOT_MQTT_Publish(void *handle, const char *topic_name, iotx_mqtt_topic_info_pt topic_msg)</code>函数</li>
-<li>订阅Topic使用<code>IOT_MQTT_Subscribe</code>函数,其中<code>topic_handle_func</code>参数为接收数据时进入的回调。</li>
+<li>订阅Topic使用<code>IOT_MQTT_Subscribe``</code>函数,其中<code>topic_handle_func``</code>参数为接收数据时进入的回调。</li>
 <li>如果Topic配置为写入/读取，则发送时会即使返回消息，可以用来测试</li>
 <li>如果消息一直不通过轮询来接收，可能会堵塞，表现为一直报错消息句柄不正确</li>
 </ul>
@@ -527,7 +539,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#环境搭建"><span class="nav-number">1.</span> <span class="nav-text">环境搭建</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#修改内容记录"><span class="nav-number">2.</span> <span class="nav-text">修改内容记录</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#环境搭建"><span class="nav-number">1.</span> <span class="nav-text">环境搭建</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#编译"><span class="nav-number">2.</span> <span class="nav-text">编译</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#修改内容记录"><span class="nav-number">3.</span> <span class="nav-text">修改内容记录</span></a></li></ol></div>
             
 
           </div>

@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="环境搭建参照ESP8266在Alios-Things上的入门开发指南 （一）开发环境搭建及HelloWorld固件进行环境搭建  系统需求：windows10，安装Docker，VSCode(需包括插件alios-studio、c/c++)。 获取作者制作好的Docker镜像   pull jacklan/alios-things-docker ```   12345678    也可以自己搭建，">
+<meta name="description" content="环境搭建参照ESP8266在Alios-Things上的入门开发指南 （一）开发环境搭建及HelloWorld固件进行环境搭建  系统需求：windows10，安装Docker，VSCode(需包括插件alios-studio、c/c++)。 获取作者制作好的Docker镜像docker pull jacklan/alios-things-docker 也可以自己搭建，请参照原文档 克隆alios">
 <meta name="keywords" content="C,IOT,ESP8266,Aliyun,飞燕">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ESP8266接入飞燕平台">
 <meta property="og:url" content="http://yoursite.com/2018/07/04/ESP8266接入飞燕平台/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="环境搭建参照ESP8266在Alios-Things上的入门开发指南 （一）开发环境搭建及HelloWorld固件进行环境搭建  系统需求：windows10，安装Docker，VSCode(需包括插件alios-studio、c/c++)。 获取作者制作好的Docker镜像   pull jacklan/alios-things-docker ```   12345678    也可以自己搭建，">
+<meta property="og:description" content="环境搭建参照ESP8266在Alios-Things上的入门开发指南 （一）开发环境搭建及HelloWorld固件进行环境搭建  系统需求：windows10，安装Docker，VSCode(需包括插件alios-studio、c/c++)。 获取作者制作好的Docker镜像docker pull jacklan/alios-things-docker 也可以自己搭建，请参照原文档 克隆alios">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-04T14:36:34.520Z">
+<meta property="og:updated_time" content="2018-07-04T14:59:09.800Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ESP8266接入飞燕平台">
-<meta name="twitter:description" content="环境搭建参照ESP8266在Alios-Things上的入门开发指南 （一）开发环境搭建及HelloWorld固件进行环境搭建  系统需求：windows10，安装Docker，VSCode(需包括插件alios-studio、c/c++)。 获取作者制作好的Docker镜像   pull jacklan/alios-things-docker ```   12345678    也可以自己搭建，">
+<meta name="twitter:description" content="环境搭建参照ESP8266在Alios-Things上的入门开发指南 （一）开发环境搭建及HelloWorld固件进行环境搭建  系统需求：windows10，安装Docker，VSCode(需包括插件alios-studio、c/c++)。 获取作者制作好的Docker镜像docker pull jacklan/alios-things-docker 也可以自己搭建，请参照原文档 克隆alios">
 
 
 
@@ -336,14 +336,43 @@
         <h1 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h1><p>参照<a href="https://blog.csdn.net/lan120576664/article/details/80197396" target="_blank" rel="noopener">ESP8266在Alios-Things上的入门开发指南 （一）开发环境搭建及HelloWorld固件</a>进行环境搭建</p>
 <ol>
 <li>系统需求：windows10，安装Docker，VSCode(需包括插件alios-studio、c/c++)。</li>
-<li><p>获取作者制作好的Docker镜像  </p>
-<figure class="highlight docker"><figcaption><span>pull jacklan/alios-things-docker ```   </span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">    也可以自己搭建，请参照原文档</span><br><span class="line"><span class="number">3</span>. 克隆alios-things仓库代码  </span><br><span class="line">``` git clone https://github.com/alibaba/AliOS-Things ``` </span><br><span class="line"><span class="number">4</span>. 用VSCode打开AliOS-Things代码仓库，进入终端，执行下列命令即可进入docker环境  </span><br><span class="line">``` docker <span class="keyword">run</span> -v %cd%:/home/alios/AliOS-Things --name alios-things-build -it --rm jacklan/alios-things-docker  ```  </span><br><span class="line">    编译时使用以下指令  </span><br><span class="line">    ``` aos make helloworld@esp8266```  </span><br><span class="line">    如果后续需要再次进入docker环境可以依次执行以下指令</span><br></pre></td></tr></table></figure>
-<p> @echo off<br> docker stop alios-things-build<br> docker rm alios-things-build<br> docker run -v %cd%:/home/alios/AliOS-Things –name alios-things-build -it –rm jacklan/alios-things-docker<br> <code>`</code></p>
+<li>获取作者制作好的Docker镜像<br><code>docker pull jacklan/alios-things-docker</code><br> 也可以自己搭建，请参照原文档</li>
+<li>克隆alios-things仓库代码<br><code>git clone https://github.com/alibaba/AliOS-Things</code> </li>
+<li><p>用VSCode打开AliOS-Things代码仓库，进入终端，执行下列命令即可进入docker环境<br><code>docker run -v %cd%:/home/alios/AliOS-Things --name alios-things-build -it --rm jacklan/alios-things-docker</code><br> 编译时使用以下指令<br> <code>aos make helloworld@esp826</code><br> 如果后续需要再次进入docker环境可以依次执行以下指令  </p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">@echo off</span><br><span class="line">docker stop alios-things-build</span><br><span class="line">docker rm alios-things-build</span><br><span class="line">docker run -v %cd%:/home/alios/AliOS-Things --name alios-things-build -it --rm jacklan/alios-things-docker</span><br></pre></td></tr></table></figure>
 <p> 建议保存为.bat文件方便使用</p>
 </li>
-<li>然后烧录即可<br>|文件名|烧录地址|<br>|:——–|:——-|<br>|boot_v1.7_921600.bin|0x0|<br>|esp_init_data_default.bin|    0x3fc000|<br>|blank.bin|0x3fe000|<br><a href="mailto:|helloworld@esp8266-0x1000.bin" target="_blank" rel="noopener">|helloworld@esp8266-0x1000.bin</a>|0x1000|<br>其中，“boot_v1.7_921600.bin” “esp_init_data_default.bin” “blank.bin”这三个文件可以在“xxx\AliOS-Things\platform\mcu\esp8266\bsp”目录找到<br>“<a href="mailto:helloworld@esp8266-0x1000.bin" target="_blank" rel="noopener">helloworld@esp8266-0x1000.bin</a>”可以在“xxx\AliOS-Things\out\helloworld@esp8266”找到</li>
+<li>然后烧录即可  </li>
 </ol>
-<hr>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">文件名</th>
+<th style="text-align:left">烧录地址</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">boot_v1.7_921600.bin</td>
+<td style="text-align:left">0x0</td>
+</tr>
+<tr>
+<td style="text-align:left">esp_init_data_default.bin</td>
+<td style="text-align:left">0x3fc000</td>
+</tr>
+<tr>
+<td style="text-align:left">blank.bin</td>
+<td style="text-align:left">0x3fe000</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="mailto:helloworld@esp8266-0x1000.bin" target="_blank" rel="noopener">helloworld@esp8266-0x1000.bin</a></td>
+<td style="text-align:left">0x1000</td>
+</tr>
+</tbody>
+</table>
+<pre><code>其中，“boot_v1.7_921600.bin&quot; &quot;esp_init_data_default.bin&quot; &quot;blank.bin&quot;这三个文件可以在“xxx\AliOS-Things\platform\mcu\esp8266\bsp”目录找到  
+“helloworld@esp8266-0x1000.bin”可以在“xxx\\AliOS-Things\out\helloworld@esp8266”找到
+</code></pre><hr>
 <h1 id="设备接入"><a href="#设备接入" class="headerlink" title="设备接入"></a>设备接入</h1><h2 id="注册设备"><a href="#注册设备" class="headerlink" title="注册设备"></a>注册设备</h2><p>首先在<a href="https://living.aliyun.com/" target="_blank" rel="noopener">https://living.aliyun.com/</a>建立设备<strong>注意前期注册ICA标准格式</strong>，如果透传格式需在设备调试页面编辑脚本，记录下  </p>
 <ul>
 <li>PRODUCT_KEY</li>
